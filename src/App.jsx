@@ -313,7 +313,7 @@ export default function App() {
                         {/* College Card */}
                         <div className="mb-8 bg-surfaceContain dark:bg-surfaceContain-dark rounded-2xl p-6 border border-border dark:border-border-dark">
                             <div className="text-4xl mb-4 text-onSurface dark:text-onSurface-dark">🎓</div>
-                            <div className="text-2xl font-bold mb-2 text-onSurface dark:text-onSurface-dark">{bestMatch.name}</div>
+                            <div className="text-2xl font-semibold mb-2 text-onSurface dark:text-onSurface-dark">{bestMatch.name}</div>
                             <div className="text-sm text-secondary dark:text-secondary-dark mb-4">{bestMatch.location}</div>
                             
                             {/* Description */}
@@ -408,8 +408,8 @@ export default function App() {
                         disabled={selected === null}
                         className={`w-full py-3 rounded-xl font-semibold transition text-lg
                             ${selected !== null 
-                                ? "bg-onSurface dark:bg-onSurface-dark text-surface dark:text-surface-dark" 
-                                : "bg-gray-200 dark:bg-gray-700 text-gray-400 dark:text-gray-500 cursor-not-allowed"}
+                                ? "bg-onSurface font-sans dark:bg-onSurface-dark text-surface dark:text-surface-dark" 
+                                : "bg-gray-200 font-sans dark:bg-gray-700 text-gray-400 dark:text-gray-500 cursor-not-allowed"}
                         `}
                     >
                         Continue
