@@ -12,7 +12,7 @@ export default function Navbar() {
   const stopPropagation = (e) => e.stopPropagation();
 
   return (
-    <nav className="fixed top-0 px-4 lg:px-0 left-0 right-0 w-full flex justify-center py-6 z-50">
+    <nav className="fixed top-0 px-4 lg:px-0 left-0 right-0 w-full flex justify-center py-3 lg:py-6 z-50">
       <div className="flex items-center justify-between w-full lg:max-w-[690px] border-[1px] border-border dark:border-border-dark bg-surfaceContain dark:bg-surfaceContain-dark rounded-full px-6 py-3">
         {/* Logo */}
         <div className="flex items-center font-bold text-2xl select-none">
