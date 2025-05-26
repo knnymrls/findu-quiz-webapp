@@ -50,6 +50,14 @@ export default function Navbar() {
         </button>
       </div>
 
+      {/* Mobile Menu Overlay (invisible, closes menu on click) */}
+      {isMenuOpen && (
+        <div
+          className="fixed inset-0 z-30 bg-transparent lg:hidden"
+          onClick={handleOverlayClick}
+        />
+      )}
+
       {/* Mobile Menu Panel */}
       <div
         className={`absolute right-0 top-[90px] w-fit max-w-[690px] mx-4 rounded-2xl  bg-surfaceContain dark:bg-surfaceContain-dark border-[1px] border-border dark:border-border-dark lg:hidden z-40 transition-opacity duration-300 ${
