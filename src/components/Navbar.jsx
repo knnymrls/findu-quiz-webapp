@@ -52,7 +52,7 @@ export default function Navbar() {
 
       {/* Mobile Menu Panel */}
       <div
-        className={`absolute right-0 top-[98px] w-fit max-w-[690px] mx-4 rounded-2xl  bg-surfaceContain dark:bg-surfaceContain-dark border-[1px] border-border dark:border-border-dark lg:hidden z-40 transition-opacity duration-300 ${
+        className={`absolute right-0 top-[90px] w-fit max-w-[690px] mx-4 rounded-2xl  bg-surfaceContain dark:bg-surfaceContain-dark border-[1px] border-border dark:border-border-dark lg:hidden z-40 transition-opacity duration-300 ${
           isMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
         }`}
         onClick={stopPropagation}
