@@ -308,7 +308,7 @@ export default function App() {
         return (
             <div className="min-h-screen bg-surface dark:bg-surface-dark relative">
                 <Navbar />
-                <div className="flex items-center justify-center min-h-screen">
+                <div className="flex items-center justify-center min-h-screen p-6">
                     <div className="w-full max-w-md text-center">
                         {/* College Card */}
                         <div className="mb-8 bg-surfaceContain dark:bg-surfaceContain-dark rounded-2xl p-6 border border-border dark:border-border-dark">
@@ -382,7 +382,7 @@ export default function App() {
     return (
         <div className="min-h-screen bg-surface dark:bg-surface-dark relative">
             <Navbar />
-            <div className="flex items-center justify-center min-h-screen">
+            <div className="flex items-center justify-center min-h-screen p-6">
                 <div className="w-full max-w-md">
                     <div className="text-center mb-8">
                         <div className="text-lg font-medium text-secondary dark:text-secondary-dark mb-1 font-sans">Question {step + 1} of {questions.length}</div>
