@@ -21,13 +21,13 @@ export default function Navbar() {
 
         {/* Desktop Links */}
         <div className="hidden lg:flex gap-9">
-          <a href="https://joinfindu.com/students" className="text-secondary dark:text-secondary-dark font-sans font-medium hover:text-primary transition">
+          <a href="https://joinfindu.com/students" className="text-secondary dark:text-secondary-dark font-sans font-medium hover:font-semibold hover:text-primary transition">
             Students
           </a>
-          <a href="#" className="text-secondary dark:text-secondary-dark font-sans font-medium hover:text-primary transition">
+          <a href="#" className="text-secondary dark:text-secondary-dark font-sans font-medium hover:font-semibold hover:text-primary transition">
             Parents
           </a>
-          <a href="#" className="text-secondary dark:text-secondary-dark font-sans font-medium hover:text-primary transition">
+          <a href="#" className="text-secondary dark:text-secondary-dark font-sans font-medium hover:font-semibold hover:text-primary transition">
             Schools
           </a>
         </div>
@@ -66,9 +66,9 @@ export default function Navbar() {
         onClick={stopPropagation}
       >
         <div className="px-6 py-4 flex flex-col items-end gap-2">
-          <a href="https://joinfindu.com/students" className="text-secondary dark:text-secondary-dark font-sans font-medium hover:text-primary transition py-2">Students</a>
-                        <a href="#" className="text-secondary dark:text-secondary-dark font-sans font-medium hover:text-primary transition py-2">Parents</a>
-                        <a href="#" className="text-secondary dark:text-secondary-dark font-sans font-medium hover:text-primary transition py-2">Schools</a>
+          <a href="https://joinfindu.com/students" className="text-secondary dark:text-secondary-dark font-sans font-medium hover:font-semibold hover:text-primary transition py-2">Students</a>
+                        <a href="#" className="text-secondary dark:text-secondary-dark font-sans font-medium hover:text-primary hover:font-semibold transition py-2">Parents</a>
+                        <a href="#" className="text-secondary dark:text-secondary-dark font-sans font-medium hover:text-primary hover:font-semibold transition py-2">Schools</a>
                         <a href="#" className="px-6 py-3 rounded-full bg-onSurface dark:bg-onSurface-dark w-fit font-sans text-surface dark:text-surface-dark font-semibold shadow transition text-sm text-center">Join FindU</a>
         </div>
       </div>
