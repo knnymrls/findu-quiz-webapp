@@ -30,7 +30,7 @@ export default function App() {
 
         const scores = colleges.map((college) => {
   const similarity = cosineSimilarity(studentVector, college.vector);
-  const noise = Math.random() * 0.02 - 0.01; // Random value from -0.01 to +0.01
+  const noise = Math.random() * 0.5 - 0.25; // -0.25 to +0.25
   return {
     ...college,
     score: Math.round((similarity + noise) * 100)

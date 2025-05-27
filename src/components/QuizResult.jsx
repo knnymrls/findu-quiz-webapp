@@ -99,7 +99,7 @@ export default function QuizResult({ bestMatch, onRetake }) {
           Share Results
         </button>
         <button
-          onClick={() => window.open('https://findu.app/download', '_blank')}
+          onClick={() => window.open('apple.co/3EDhKPd', '_blank')}
           className="px-6 py-3 rounded-full bg-onSurface dark:bg-onSurface-dark text-surface dark:text-surface-dark font-semibold shadow transition text-sm hover:bg-gray-900"
         >
           Download App
