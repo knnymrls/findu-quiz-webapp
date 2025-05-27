@@ -35,7 +35,7 @@ export default function Navbar() {
         {/* Desktop Join Button */}
         <a
           href="#"
-          className="hidden lg:flex px-6 py-3 rounded-full bg-onSurface dark:bg-onSurface-dark text-surface dark:text-surface-dark font-semibold shadow transition text-sm"
+          className="hidden lg:flex px-6 py-3 font-sans rounded-full bg-onSurface dark:bg-onSurface-dark text-surface dark:text-surface-dark font-semibold shadow transition text-sm"
         >
           Join FindU
         </a>
@@ -69,7 +69,7 @@ export default function Navbar() {
           <a href="https://joinfindu.com/students" className="text-secondary dark:text-secondary-dark font-sans font-medium hover:text-black transition py-2">Students</a>
                         <a href="#" className="text-secondary dark:text-secondary-dark font-sans font-medium hover:text-black transition py-2">Parents</a>
                         <a href="#" className="text-secondary dark:text-secondary-dark font-sans font-medium hover:text-black transition py-2">Schools</a>
-                        <a href="#" className="px-6 py-3 rounded-full bg-onSurface dark:bg-onSurface-dark w-fit text-surface dark:text-surface-dark font-semibold shadow transition text-sm text-center">Join FindU</a>
+                        <a href="#" className="px-6 py-3 rounded-full bg-onSurface dark:bg-onSurface-dark w-fit font-sans text-surface dark:text-surface-dark font-semibold shadow transition text-sm text-center">Join FindU</a>
         </div>
       </div>
     </nav>
