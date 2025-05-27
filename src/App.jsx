@@ -2,8 +2,10 @@
 
 import { useState } from "react"
 import Navbar from "./components/Navbar"
-import { colleges } from "./data/colleges"
 import { questions } from "./data/questions"
+import { colleges } from "./data/colleges";
+import { vectorizeStudentAnswers } from "./utils/vectorizeStudentAnswers"
+import { cosineSimilarity } from "./utils/cosineSimilarity"
 import QuizQuestion from "./components/QuizQuestion"
 import QuizResult from "./components/QuizResult"
 
@@ -23,51 +25,25 @@ export default function App() {
         setStep((prev) => prev + 1)
     }
 
-    if (step >= questions.length) {
+     if (step >= questions.length) {
+        const studentVector = vectorizeStudentAnswers(answers)
+
         const scores = colleges.map((college) => {
-            let score = 0;
-            let totalWeight = 0;
-            
-            Object.entries(answers).forEach(([key, value]) => {
-                const weight = college.match_weights[key] || 1.0;
-                totalWeight += weight;
-                
-                if (key === 'academic_strength') {
-                    if (college.academic_strength >= value) {
-                        score += weight;
-                    } else {
-                        score += weight * (college.academic_strength / value);
-                    }
-                } else if (key === 'campus_type') {
-                    if (college[key] === value) {
-                        score += weight;
-                    }
-                } else if (key === 'career_focus') {
-                    if (college[key] === value) {
-                        score += weight;
-                    }
-                }
-            });
+  const similarity = cosineSimilarity(studentVector, college.vector);
+  const noise = Math.random() * 0.02 - 0.01; // Random value from -0.01 to +0.01
+  return {
+    ...college,
+    score: Math.round((similarity + noise) * 100)
+  };
+});
 
-            const normalizedScore = (score / totalWeight) * 100;
-            
-            return { 
-                ...college, 
-                score: Math.round(normalizedScore),
-                matchDetails: {
-                    academicMatch: college.academic_strength >= answers.academic_strength ? "Meets your academic level" : "More selective than your preference",
-                    campusMatch: college.campus_type === answers.campus_type ? "Matches your preferred campus type" : "Different campus environment",
-                    careerMatch: college.career_focus === answers.career_focus ? "Aligns with your educational approach" : "Different educational focus"
-                }
-            };
-        });
-
-        // Sort by score and get top 3 matches
         const topMatches = scores
             .sort((a, b) => b.score - a.score)
-            .slice(0, 3);
+            .slice(0, 3)
 
-        const bestMatch = topMatches[0];
+         const bestMatch = topMatches[0]
+         console.log(bestMatch)
+
 
         return (
             <div className="min-h-screen bg-surface dark:bg-surface-dark relative">
@@ -78,7 +54,6 @@ export default function App() {
             </div>
         )
     }
-
     return (
         <div className="min-h-screen bg-surface dark:bg-surface-dark relative">
             <Navbar />
