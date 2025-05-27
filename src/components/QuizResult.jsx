@@ -92,10 +92,7 @@ export default function QuizResult({ bestMatch, onRetake }) {
               title: 'FindU College Quiz',
               text: `I found my college match on FindU! My best match was ${name}. Take the quiz to find yours!`,
               url: window.location.href
-            }).catch(() => {
-              navigator.clipboard.writeText(window.location.href);
-              alert('Link copied to clipboard!');
-            });
+            })
           }}
           className="px-6 py-3 rounded-full bg-surfaceContain dark:bg-surfaceContain-dark border border-border dark:border-border-dark text-onSurface dark:text-onSurface-dark font-semibold shadow transition text-sm hover:bg-gray-50 dark:hover:bg-gray-800"
         >
