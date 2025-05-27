@@ -21,13 +21,13 @@ export default function Navbar() {
 
         {/* Desktop Links */}
         <div className="hidden lg:flex gap-9">
-          <a href="https://joinfindu.com/students" className="text-secondary dark:text-secondary-dark font-sans font-medium hover:font-semibold hover:text-primary transition">
+          <a href="https://joinfindu.com/students" className="text-secondary dark:text-secondary-dark font-sans font-medium hover:font-semibold hover:text-primary hover:scale-105 transition">
             Students
           </a>
-          <a href="#" className="text-secondary dark:text-secondary-dark font-sans font-medium hover:font-semibold hover:text-primary transition">
+          <a href="#" className="text-secondary dark:text-secondary-dark font-sans font-medium hover:font-semibold hover:text-primary hover:scale-105 transition">
             Parents
           </a>
-          <a href="#" className="text-secondary dark:text-secondary-dark font-sans font-medium hover:font-semibold hover:text-primary transition">
+          <a href="#" className="text-secondary dark:text-secondary-dark font-sans font-medium hover:font-semibold hover:text-primary hover:scale-105 transition">
             Schools
           </a>
         </div>
