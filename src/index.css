@@ -22,10 +22,10 @@ html, body, #root {
 }
 
 @theme {
-  --color-surface: #F6F8FA;
+  --color-surface: #FAFCFC;
   --color-surfaceContain: #FFFFFF;
   --color-primary: #FC5050;
-  --color-onSurface: #121212;
+  --color-onSurface: #262626;
   --color-border: #E4E4E4;
   --color-allWhite: #FFFFFF;
   --color-onPrimary: #FFF5F5;
