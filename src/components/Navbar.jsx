@@ -24,20 +24,20 @@ export default function Navbar() {
           <a href="https://joinfindu.com/students" className="text-secondary dark:text-secondary-dark font-sans font-medium hover:font-semibold hover:text-primary hover:scale-105 transition">
             Students
           </a>
-          <a href="#" className="text-secondary dark:text-secondary-dark font-sans font-medium hover:font-semibold hover:text-primary hover:scale-105 transition">
+          <a href="https://joinfindu.com/parents" className="text-secondary dark:text-secondary-dark font-sans font-medium hover:font-semibold hover:text-primary hover:scale-105 transition">
             Parents
           </a>
-          <a href="#" className="text-secondary dark:text-secondary-dark font-sans font-medium hover:font-semibold hover:text-primary hover:scale-105 transition">
+          <a href="https://joinfindu.com/schools" className="text-secondary dark:text-secondary-dark font-sans font-medium hover:font-semibold hover:text-primary hover:scale-105 transition">
             Schools
           </a>
         </div>
 
         {/* Desktop Join Button */}
         <a
-          href="#"
+          href="https://joinfindu.com/contact"
           className="hidden lg:flex px-6 py-3 font-sans rounded-full bg-onSurface dark:bg-onSurface-dark text-surface dark:text-surface-dark font-semibold shadow transition text-sm"
         >
-          Join FindU
+          Contact us
         </a>
 
         {/* Hamburger Menu Button - only mobile */}
@@ -66,10 +66,10 @@ export default function Navbar() {
         onClick={stopPropagation}
       >
         <div className="px-6 py-4 flex flex-col items-end gap-2">
-          <a href="https://joinfindu.com/students" className="text-secondary dark:text-secondary-dark font-sans font-medium hover:font-semibold hover:text-primary transition py-2">Students</a>
-                        <a href="#" className="text-secondary dark:text-secondary-dark font-sans font-medium hover:text-primary hover:font-semibold transition py-2">Parents</a>
-                        <a href="#" className="text-secondary dark:text-secondary-dark font-sans font-medium hover:text-primary hover:font-semibold transition py-2">Schools</a>
-                        <a href="#" className="px-6 py-3 rounded-full bg-onSurface dark:bg-onSurface-dark w-fit font-sans text-surface dark:text-surface-dark font-semibold shadow transition text-sm text-center">Join FindU</a>
+          <a href="https://joinfindu.com" className="text-secondary dark:text-secondary-dark font-sans font-medium hover:font-semibold hover:text-primary transition py-2">Students</a>
+                        <a href="https://joinfindu.com/parents" className="text-secondary dark:text-secondary-dark font-sans font-medium hover:text-primary hover:font-semibold transition py-2">Parents</a>
+                        <a href="https://joinfindu.com/schools" className="text-secondary dark:text-secondary-dark font-sans font-medium hover:text-primary hover:font-semibold transition py-2">Schools</a>
+                        <a href="https://joinfindu.com/contact" className="px-6 py-3 rounded-full bg-onSurface dark:bg-onSurface-dark w-fit font-sans text-surface dark:text-surface-dark font-semibold shadow transition text-sm text-center">Contact us</a>
         </div>
       </div>
     </nav>
