@@ -21,7 +21,7 @@ export default function Navbar() {
 
         {/* Desktop Links */}
         <div className="hidden lg:flex gap-9">
-          <a href="https://joinfindu.com/students" className="text-secondary dark:text-secondary-dark font-sans font-medium hover:font-semibold hover:text-primary hover:scale-105 transition">
+          <a href="https://joinfindu.com" className="text-secondary dark:text-secondary-dark font-sans font-medium hover:font-semibold hover:text-primary hover:scale-105 transition">
             Students
           </a>
           <a href="https://joinfindu.com/parents" className="text-secondary dark:text-secondary-dark font-sans font-medium hover:font-semibold hover:text-primary hover:scale-105 transition">
