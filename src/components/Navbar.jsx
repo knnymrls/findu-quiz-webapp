@@ -16,7 +16,9 @@ export default function Navbar() {
       <div className="flex items-center justify-between w-full lg:max-w-[690px] border-[1px] border-border dark:border-border-dark bg-surfaceContain dark:bg-surfaceContain-dark rounded-full px-6 py-3">
         {/* Logo */}
         <div className="flex items-center font-bold text-2xl select-none">
-          <FindULogo className="h-[24px]" />
+          <a href="https://joinfindu.com">
+            <FindULogo className="h-[24px]" />
+            </a>
         </div>
 
         {/* Desktop Links */}
